@@ -8,10 +8,12 @@ body {
 a {
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
-	margin-left: 1.5em;
 	text-decoration: none;
 	color: black;
+	padding-left: 1em;
+	padding-right: 1em;
 }
+
 
 h3 {
 	font-family: 'Lobster', cursive;
@@ -23,7 +25,9 @@ h3 {
 
 p {
 	font-family: 'Helvetica';
+	line-height: 120%;
 }
+
 
 .head {
 	background-color: white;
@@ -38,6 +42,16 @@ p {
 }
 
 .home {
+	margin-top: 20em;
+	background-color: white;
+	padding: 2em;
+	box-shadow: 0em 0.1em 10px black;
+	padding-top: 6em;
+	padding-bottom: 5em;
+	text-align: center;
+}
+
+.about {
 	margin-top: 20em;
 	text-align: center;
 	background-color: white;
@@ -55,6 +69,10 @@ p {
 	background-color: white;
 	padding: 2em;
 	box-shadow: 0em 0.1em 10px black;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 6em;
+	padding-bottom: 5em;
 
 }
 
@@ -64,7 +82,8 @@ p {
 	background-color: white;
 	padding: 2em;
 	box-shadow: 0em 0.1em 10px black;
-
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 .hidden {

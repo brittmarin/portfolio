@@ -1,26 +1,14 @@
-var main = function () {
-  "use strict";
-  
-  	$(".homebutton").on("click", function( e ) {
-    e.preventDefault();
-	$("body, html").animate({ 
-        scrollTop: $( $(this).attr('#home') ).offset().top 
-    }, 600);
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
 
+        var target = this.hash;
+        var $target = $(target);
 
-    $(".myworkbutton").on("click", function( e ) {
-    e.preventDefault();
-	$("body, html").animate({ 
-        scrollTop: $( $(this).attr('#mywork') ).offset().top 
-    }, 600);
-
-
-    $(".contactbutton").on("click", function( e ) {
-    e.preventDefault();
-	$("body, html").animate({ 
-        scrollTop: $( $(this).attr('#contact') ).offset().top 
-    }, 600);
-    
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 });
-
-$("document").ready(main);
