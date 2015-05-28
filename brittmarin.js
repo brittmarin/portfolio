@@ -8,13 +8,6 @@ var main = function () {
     }, 600);
 
 
-    $(".aboutbutton").on("click", function( e ) {
-    e.preventDefault();
-	$("body, html").animate({ 
-        scrollTop: $( $(this).attr('#about') ).offset().top 
-    }, 600);
-
-
     $(".myworkbutton").on("click", function( e ) {
     e.preventDefault();
 	$("body, html").animate({ 
