@@ -1,5 +1,5 @@
 body {
-	background-image: url(background.jpg);
+	background-image: url(edit13HDR.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
@@ -31,6 +31,17 @@ img {
 	padding: 0.4em;
 }
 
+@font-face {
+  font-family: 'Across the Road';
+  src: url('http://www.fontsaddict.com/fontface/across-the-road.ttf');
+}
+
+.quote {
+	font-family: 'Across the road';
+	font-size: 2.5em;
+	margin-top: -1.5em;
+}
+
 .head {
 	background-color: white;
 	text-align: center;
@@ -48,7 +59,7 @@ img {
 	background-color: white;
 	padding: 2em;
 	box-shadow: 0em 0.1em 10px black;
-	padding-top: 7em;
+	padding-top: 5em;
 	padding-bottom: 5em;
 	text-align: center;
 }
@@ -75,7 +86,6 @@ img {
 	padding-right: 15%;
 	padding-top: 7em;
 	padding-bottom: 5em;
-
 }
 
 .contact {
@@ -121,4 +131,25 @@ ul li ul li:hover {
 
 ul li:hover ul {
   	display: block;
+}
+
+
+@media (max-width: 600px) {
+
+	body {
+		background-image: url(edit17.jpg);
+	}
+
+	ul li {
+		display: block;
+		text-align: center;
+	}
+
+	img {
+		width: 100%;
+		padding: 2em;
+
+
+	}
+
 }
